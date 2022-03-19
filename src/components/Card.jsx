@@ -8,7 +8,7 @@ export const Card = ({item}) => {
   <div className="card-body">
     <h2 className="card-title">
       {item.title}
-      <div className="badge badge-error">{item.vote_average}&#9733;</div>
+      <div className="badge badge-warning">{item.vote_average}&#9733;</div>
     </h2>
     <p>{item.overview.substring(0,100)} . . . . . .</p>
     <div className="card-actions justify-end">

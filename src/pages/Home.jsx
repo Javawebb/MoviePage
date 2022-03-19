@@ -9,7 +9,7 @@ export const Home = ({movies}) => {
   const [search , setSearch] = useState('')
 
   if(search.length >= 3){
-    let _movies = movies.filter(item => item.title.toLowerCase().includes(search))
+    let _movies = movies.filter(item => item.title.toLowerCase().includes(search.toLocaleLowerCase()))
     return (
       <div>
           <Navbar setSearch={setSearch}/>

@@ -20,7 +20,7 @@ export const Movie = ({movies}) => {
     <div>
         <div className="">
             <h1 className="text-5xl font-bold">{movie.title}</h1>
-            <div class="badge badge-error gap-2 mt-2">{movie.vote_average} &#10029;</div>
+            <div class="badge badge-warning gap-2 mt-2">{movie.vote_average} &#10029;</div>
             </div>
             <div className="divider"></div>
         <ul className='mt-5 flex flex-col gap-2'>
